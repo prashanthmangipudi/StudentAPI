@@ -5,7 +5,7 @@ const api = require('./api');
 const port=3000;
 const app=express();
 
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
 	console.log("Server is listening at port:" + port);
 });
 
